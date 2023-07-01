@@ -3,8 +3,9 @@
 
 require 'sketchup.rb'
 
-module Examples
-  module HelloCube
+module Toto
+  module Polcok
+
 
     def self.create_cube
       model = Sketchup.active_model
@@ -24,11 +25,11 @@ module Examples
 
     unless file_loaded?(__FILE__)
       menu = UI.menu('Plugins')
-      menu.add_item('Create Cube Example') {
+      menu.add_item('Polc') {
         self.create_cube
       }
       file_loaded(__FILE__)
     end
 
   end # module HelloCube
-end # module Examples
+end # module Polcok
